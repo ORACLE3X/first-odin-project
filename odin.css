@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+@font-face {
+    font-family: Norse Bold;
+    src: url(./first_project/33.otf);
+}
+body{
+    background-color: rgb(240, 234, 234);
+    display: flex;
+     font-family: Arial, sans-serif;
+  height: 100vh;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+
+}
+.wrapper-left{
+    display: flex;
+    background: url(./first_project/leaf.jpg) no-repeat center center/cover;
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+.wrapper-left-content{
+    display: flex;
+    align-items: center;
+    align-content: center           ;
+    font-family: Norse Bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 20px;
+    gap: 10px;
+    width: 100vw;
+    padding-left: 40%;
+}
+.wrapper-left-content img{
+    width: 80px;
+}
+.wrapper-left-content h1{
+    font-size: 80px;
+}
+.wrapper-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px   ;
+    height: 100vh;
+}
+.wrapper-right-t1 {
+    align-items: center;
+    align-content: center;
+    margin-top: 70px;
+    font-size: 30px;
+    /* padding: 10%; */
+    padding-left: 4%;
+    margin-right: 10%;
+
+}
+.wrapper-right-t1 p{
+    font-weight: bold;
+}
+.wrapper-right-t2{
+   font-weight: bold;
+    padding-left: 4%;
+    font-size: 30px;
+}
+.wrapper-right-t2 span{
+    font-style: italic;
+}
+.wrapper-right-form{
+    background-color: white;
+    padding: 40px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.input-blue:focus{
+    outline: none;
+    border-color: navy;
+}
+.input-red:focus{
+    outline: none;
+    border-color: red;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    color: white;
+    background-color: rgb(9, 59, 9);
+    border-radius: 4px;
+    padding: 20px;
+    font: 400;
+    margin-right: 20%;
+    margin-left: 30px;
+    width: 20%;
+}
+.p-txt{
+    margin-left: 30px;
+}
+.p-txt a{
+    color: rgb(9, 59, 9);
+}
+
+
+@media (max-width: 600px) {
+  .wrapper-left-content h1 {
+    font-size: 40px; /* shrink ODIN text */
+  }
+
+  .wrapper-right-form {
+    padding: 15px;
+  }
+
+  form {
+    grid-template-columns: 1fr; /* inputs stack vertically if too cramped */
+  }
+}
