@@ -20,5 +20,5 @@ const humanPlay = (humanChoice, computerChoice) => {
 };
 humanPlay(userInput, computerChoice);
 
-location.reload();
+// location.reload();
  });
